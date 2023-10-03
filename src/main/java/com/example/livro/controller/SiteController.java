@@ -8,9 +8,13 @@ import com.example.livro.validation.PaginaNaoEncontrada;
 @Controller
 
 public class SiteController{
-    @GetMapping("/")
+    @GetMapping("/websocket")
     public String index(){
       return "websocket";
+    }
+     @GetMapping("/teste")
+    public String teste(){
+      return "teste";
     }
 
    
