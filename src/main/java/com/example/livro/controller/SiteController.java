@@ -10,13 +10,9 @@ import com.example.livro.validation.PaginaNaoEncontrada;
 public class SiteController{
     @GetMapping("/")
     public String index(){
-        return "index";
+      return "websocket";
     }
 
-
-    @GetMapping("/**")
-    public void handleDefault(){
-        throw new PaginaNaoEncontrada("URL não encontrada");
-    }
+   
 }
 
